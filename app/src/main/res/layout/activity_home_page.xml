@@ -18,7 +18,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Username"
+        android:text="kyOkta"
         android:textSize="25sp"
         android:textStyle="bold"/>
 
@@ -29,5 +29,13 @@
         android:text="Top Movie"
         android:textSize="25sp"
         android:textStyle="bold"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical"
+        app:layoutManager="LinearLayoutManager" />
 
 </LinearLayout>
