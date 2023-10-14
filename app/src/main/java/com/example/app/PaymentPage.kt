@@ -36,6 +36,10 @@ class PaymentPage : AppCompatActivity() {
         val jmlseat = resources.getStringArray(R.array.jmlseat)
 
         with(binding){
+            btnBack.setOnClickListener{
+                val intent = Intent(this@PaymentPage, DetailsPage::class.java)
+                startActivity(intent)
+            }
 //            spinner bioskop
             val bioskopAdapter = ArrayAdapter(this@PaymentPage,
                 androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, bioskop)

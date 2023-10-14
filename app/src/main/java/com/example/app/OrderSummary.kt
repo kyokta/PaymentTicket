@@ -1,5 +1,6 @@
 package com.example.app
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.app.databinding.ActivityOrderSummaryBinding
@@ -24,6 +25,12 @@ class OrderSummary : AppCompatActivity() {
         val totalpayment = intent.getStringExtra(PaymentPage.EXTRA_TOTPAY)
 
         with(binding){
+            btnBack.setOnClickListener{
+                val intent = Intent(this@OrderSummary, HomePage::class.java)
+                startActivity(intent)
+                finish()
+            }
+
             if (arrayId != 0) {
                 val movies = resources.getStringArray(arrayId)
                 titleMovie.text = movies[0]
