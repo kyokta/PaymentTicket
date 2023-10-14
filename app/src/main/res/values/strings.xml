@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">App</string>
+<!--    Data Movies -->
     <array name="movie1">
         <item>Di Ambang Kematian</item>
         <item>1 Jam 37 Menit</item>
@@ -23,5 +24,52 @@
         <item>1 Jam 58 Menit</item>
         <item>Horror</item>
         <item>Mengejar sebuah pengobatan yang menjanjikan dapat menyembuhkan kankernya, John Kramer (Tobin Bell) menuju ke Meksiko untuk menjalani perawatan eksperimental, hanya untuk mengetahui bahwa dia menjadi mangsa dari sebuah penipuan. Kini, para scammer menjadi mangsa di permainan baru milik Jigsaw.</item>
+    </array>
+    
+<!--    data spinner-->
+    <array name="bioskop">
+        <item>Ambarukmo XXI</item>
+        <item>Ambarukmo Premiere</item>
+        <item>Empire Premier</item>
+        <item>Empire XXI</item>
+        <item>Jogja City XXI</item>
+        <item>Jogja City Premier</item>
+        <item>Jwalk Mall CGV</item>
+        <item>Lippo Plaza Jogja Cinepolis</item>
+        <item>Pakuwon Mall Jogja CGV</item>
+        <item>Sleman City Hall XXI</item>
+        <item>Transmart Maguwo CGV</item>
+    </array>
+    <array name="seat">
+        <item>Reguler Seat</item>
+        <item>VIP Seat</item>
+        <item>Sleaper Seat</item>
+    </array>
+    <integer-array name="jmlseat">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </integer-array>
+    <array name="payment_method">
+        <item>Transfer Bank</item>
+        <item>Alfamart</item>
+        <item>Indomart</item>
+        <item>Dana</item>
+        <item>ShopeePay</item>
+        <item>GoPay</item>
+    </array>
+    <array name="bank">
+        <item>BRI</item>
+        <item>BCA</item>
+        <item>BNI</item>
+        <item>Mandiri</item>
+        <item>Bank Syariah Indonesia</item>
+        <item>Bank lainnya</item>
     </array>
 </resources>

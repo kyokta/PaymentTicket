@@ -7,6 +7,10 @@ import com.example.app.databinding.ActivityDetailsPageBinding
 
 class DetailsPage : AppCompatActivity() {
     private lateinit var binding: ActivityDetailsPageBinding
+
+    companion object {
+        const val EXTRA_ID = "ext_id"
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailsPageBinding.inflate(layoutInflater)
@@ -21,7 +25,6 @@ class DetailsPage : AppCompatActivity() {
             btnBack.setOnClickListener{
                 val intent = Intent(this@DetailsPage, HomePage::class.java)
                 startActivity(intent)
-                finish()
             }
 
             if (arrayId != 0) {
@@ -41,6 +44,12 @@ class DetailsPage : AppCompatActivity() {
                 } else (
                     imageMovies.setImageResource(R.drawable.ticket)
                 )
+            }
+
+            grabMovies.setOnClickListener{
+                val intent = Intent(this@DetailsPage, PaymentPage::class.java)
+                intent.putExtra(EXTRA_ID, key)
+                startActivity(intent)
             }
         }
     }
