@@ -41,9 +41,9 @@ class DetailsPage : AppCompatActivity() {
                     imageMovies.setImageResource(R.drawable.petualangan_sherina)
                 } else if (id == "4") {
                     imageMovies.setImageResource(R.drawable.saw_x)
-                } else (
+                } else {
                     imageMovies.setImageResource(R.drawable.ticket)
-                )
+                }
             }
 
             grabMovies.setOnClickListener{

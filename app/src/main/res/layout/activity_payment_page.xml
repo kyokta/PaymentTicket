@@ -164,19 +164,30 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:layout_marginTop="10dp"/>
-                <Button
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Account Number"
-                    android:clickable="false"
-                    android:focusable="false"/>
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:errorIconDrawable="@null"
+                    app:hintEnabled="false">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/username"
+                        android:padding="15dp"
+                        style="@style/RoundedEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Account Number"
+                        android:inputType="text"
+                        android:textSize="14sp"/>
+                </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
             <Button
                 android:id="@+id/order"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:text="Order"/>
         </LinearLayout>
     </ScrollView>
