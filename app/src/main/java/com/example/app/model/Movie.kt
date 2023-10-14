@@ -5,8 +5,12 @@ import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 
 data class Movie (
-    @StringRes val id: Int,
-    @StringRes val title: Int,
-    @DrawableRes val image: Int,
-    @StringRes val duration: Int
+//    @StringRes val id: Int,
+//    @StringRes val title: Int,
+//    @DrawableRes val image: Int,
+//    @StringRes val duration: Int
+    val id: Int,
+    val title: String,
+    val image: Int,
+    val duration: String
 )
